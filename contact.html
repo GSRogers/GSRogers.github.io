@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Mowing, Landscaping, Pittsburg">
+    <meta name="author" content="Gage Rogers - Engage Design">
+
+    <link rel="stylesheet" href="Styles/main.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="/Images/logo.png">
+
+    <title>Contact Alpha Mowing and Landscpaing</title>
+</head>
+<body>
+    <header>
+        <div class="nav-top__bg">
+            <div class="gel-wrap">
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-1/1">
+                        <div class="gel-layout__padding nav-top__content">
+                            <a href="/contact.html">Quote Request</a>
+                            <span class="show-mobile"><br /></span>
+                            <a href="tel:9185049995">918-504-9995</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gel-wrap">
+            <nav class="gel-layout gel-layout--middle nav">
+                <div class="gel-layout__item gel-1/3@l gel-1/1@m">
+                    <div class="gel-layout__padding logo__container">
+                        <a href="index.html">
+                            <!--[if !IE]><!--><img src="Images/logo.svg" alt="Alpha Mowing and Landspacing" class="logo" /><!--<![endif]-->
+                            <!--[if IE]><img src="Images/logo.png" alt="Alpha Mowing and Landspacing" class="logo"/><![endif]-->
+                        </a>
+                    </div>
+                </div>
+                <div class="gel-layout__item gel-2/3@l gel-1/1@m nav-links__container">
+                    <ul class="gel-layout__padding nav-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="gel-wrap maincontent">
+        <section class="gel-layout justify--center">
+            <article class="gel-layout__item gel-2/3">
+                <h1 class="gel-canon-bold">Contact Us</h1>
+                <form action="/webformmailer.php" method="post">
+                    <input type="hidden" name="subject" value="Submission" />
+                    <input type="hidden" name="redirect" value="thankyou.html" />
+                    <div class="form-group">
+                        <label>
+                            First Name: <br /> <input type="text" name="FirstName" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Last Name: <br /><input type="text" name="LastName" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Email:  <br /><input type="text" name="email" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Comments:</label><br />
+                        <textarea name="comments" cols="40" rows="10"></textarea>
+                    </div>
+
+                    <input type="hidden" name="form_order" value="alpha" />
+                    <input type="hidden" name="form_delivery" value="hourly_digest" />
+                    <input type="hidden" name="form_format" value="html" />
+                    <div class="form-group text--center">
+                        <input class="button button--contact" type="submit" name="submit" value="Submit" />
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="gel-wrap">
+            <div class="gel-layout gel-layout--middle">
+                <div class="gel-layout__item gel-1/3@l gel-1/1@m bottom-nav">
+                    <div class="gel-layout__padding">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.facebook.com/jafo0321/" target="_blank"><img src="Images/fb-icon.png" alt="Alpha Mowing and Landscaping LLC Facebook" /></a>
+                    </div>
+                </div>
+                <div class="gel-layout__item gel-2/3@l gel-1/1@m copyright">
+                    <div class="gel-layout__padding">
+                        <p>&copy; 2017 Alpha Mowing and Landscpaing | <a href="https://www.facebook.com/EngageDesign/" target="_blank">Design - Engage Design</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

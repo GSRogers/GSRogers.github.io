@@ -1,0 +1,108 @@
+﻿$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$base-spacing-unit: 16px;
+$base-font-size: 16px;
+$line-length: 75ch;
+
+/*Original author Mike Riethmuller:
+// https://madebymike.com.au/writing/fluid-type-calc-examples/
+// https://codepen.io/MadeByMike/pen/vNrvdZ
+    */
+
+@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
+    & {
+        @each $property in $properties {
+            #{$property}: $min-value;
+        }
+
+        @media screen and (min-width: $min-screen) {
+            @each $property in $properties {
+                #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value);
+            }
+        }
+
+        @media screen and (min-width: $max-screen) {
+            @each $property in $properties {
+                #{$property}: $max-value;
+            }
+        }
+    }
+}
+
+// Requires the calc-interpolation function which can also be used independently
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+    $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+    $b: $min-value - $a * $min-screen;
+
+    $sign: "+";
+
+    @if ($b < 0) {
+        $sign: "-";
+        $b: abs($b);
+    }
+
+    @return calc(#{$a*100}vw #{$sign} #{$b});
+}
+
+html {
+    font-family: $font-family;
+    font-size: $base-font-size;
+        @include interpolate(line-height, 399px, 1280px, ($base-font-size * 1.5 ), ($base-font-size * 2));
+}
+
+
+h1, .h1 {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 2.5), ($base-font-size * 3.25));
+
+    font-weight: normal;
+}
+
+h2, .h2 {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 1.5), ($base-font-size * 2));
+
+    font-weight: bold;
+}
+
+h3, .h3 {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size *.75), ($base-font-size * 1.25));
+
+    font-weight: normal;
+}
+
+p {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size * 1.25));
+    @include interpolate(line-height, 399px, 1280px, ($base-font-size * 1.5 ), ($base-font-size * 2));
+    margin-bottom: $base-spacing-unit;
+    /*max-width: $line-length;*/
+}
+
+footer {
+    p {
+        @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size));
+        @include interpolate(line-height, 399px, 1280px, ($base-font-size), ($base-font-size * 1.25));
+    }
+
+    a {
+        @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size));
+        @include interpolate(line-height, 399px, 1280px, ($base-font-size), ($base-font-size * 1.25));
+    }
+}
+
+label {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size * 1));
+    margin: ($base-spacing-unit * .5) 0px;
+}
+
+select {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size * 1));
+}
+
+ul li {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 1), ($base-font-size * 1.25));
+    @include interpolate(line-height, 399px, 1280px, ($base-font-size * 1.5 ), ($base-font-size * 2));
+}
+
+.button {
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 1), ($base-font-size * 1.25));
+}

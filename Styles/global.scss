@@ -1,0 +1,176 @@
+﻿body {
+    line-height: 24px !important;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+h1, h2, h3, h4 {
+    color: $brand-color;
+}
+
+a {
+    color: $brand-color;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover{
+    color: $brand-color-light;
+}
+
+.button {
+    padding: ($base-spacing-unit / 2) $base-spacing-unit;
+    background-color: transparent;
+    color: $brand-color;
+    margin-top: $base-spacing-unit /2;
+    border: 1px solid $brand-color;
+
+}
+
+.button:hover {
+    background-color: $brand-color;
+    border: 1px solid $brand-color;
+    color: #ffffff;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.logo {
+    max-width: 80%;
+}
+
+.nav-top__bg {
+    background-color: $brand-color;
+}
+
+.nav-top__content {
+    text-align: right;
+}
+
+.nav-top__content a {
+    color: $color-white;
+    font-weight: 600;
+    margin-left: $base-spacing-unit;
+    text-decoration: none;
+}
+
+.nav-top__content a:hover {
+    color: $brand-color-light;
+}
+
+.nav-links {
+    text-align: right;
+    padding-right: 0;
+}
+
+
+.nav-links li {
+    width: 100%;
+    list-style: none;
+    display: inline;
+}
+
+.nav-links a {
+    color: $brand-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    padding: $base-spacing-unit;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid #004D25;
+}
+
+.copyright {
+    text-align: right;
+}
+
+footer {
+    margin-top: $base-spacing-unit * 2;
+    background-color: $brand-color;
+    color: $color-white;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-nav a {
+    display:inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: $base-spacing-unit;
+}
+
+.bottom-nav  a:hover {
+    text-decoration: underline;
+}
+
+.justify--center{
+    justify-content: center;
+}
+
+.show-mobile{
+    display: none;
+}
+
+@media (max-width: 899px) {
+    .show-mobile{
+    display: block;
+}
+
+    .nav-top__content {
+        text-align: center;
+    }
+
+    .logo__container {
+        text-align: center;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding-right: 16px;
+    }
+
+    .nav-links a {
+        margin: 0;
+        padding: $base-spacing-unit;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .bottom-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .logo {
+        width: 80%;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: $base-spacing-unit * 1.5;
+    }
+
+    .nav-links a {
+        padding: $base-spacing-unit / 2 ($base-spacing-unit * 2);
+    }
+}

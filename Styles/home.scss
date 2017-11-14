@@ -1,0 +1,28 @@
+﻿.hero {
+    background-image: url(http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+}
+
+/*
+
+http://media.istockphoto.com/photos/green-luscious-grass-picture-id516179412?s=2048x2048
+http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048
+http://media.istockphoto.com/photos/fresh-green-backyard-picture-id506180696?s=2048x2048
+
+*/
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    color: $brand-color-light;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.services-icon{
+    max-height: 175px;
+}
