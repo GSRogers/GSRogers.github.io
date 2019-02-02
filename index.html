@@ -1,15 +1,21 @@
 ﻿<!DOCTYPE html>
 <html lang="en-us">
-<head>
+<head prefix="og: http://ogp.me/ns">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="Mowing, Landscaping, Pittsburg">
+    <meta name="description" content="Alpha Mowing and Landscaping has everything you need to maintain great landscaping.">
+    <meta name="keywords" content="Alpha Mowing and Landscaping, Mowing, Landscaping, Pittsburg">
     <meta name="author" content="Gage Rogers - Engage Design">
-    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
     <link rel="icon" type="image/png" href="/Images/favicon.png">
 
-    <title>Alpha Mowing and Landscpaing LLC</title>
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Alpha Mowing and Landscaping LLC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/image/alpha-mowing-og.png" />
+
+    <title>Alpha Mowing and Landscaping LLC</title>
 </head>
 <body>
     <header>
@@ -18,9 +24,8 @@
                 <div class="gel-layout">
                     <div class="gel-layout__item gel-1/1">
                         <div class="gel-layout__padding nav-top__content">
-                            <a href="/contact.html">Quote Request</a>
-                            <span class="show-mobile"><br /></span>
-                            <a href="tel:9185049995">918-504-9995</a>
+                            <a class="hide-mobile" href="/contact.html">Quote Request</a>
+                            <a href="tel:6203220065">620-322-0065</a>
                         </div>
                     </div>
                 </div>
@@ -31,8 +36,8 @@
                 <div class="gel-layout__item gel-1/3@l gel-1/1@m">
                     <div class="gel-layout__padding logo__container">
                         <a href="index.html">
-                            <!--[if !IE]><!--><img src="Images/logo.svg" alt="Alpha Mowing and Landspacing" class="logo"/><!--<![endif]-->
-                            <!--[if IE]><img src="Images/logo.png" alt="Alpha Mowing and Landspacing" class="logo"/><![endif]-->
+                            <!--[if !IE]><!--><img src="Images/logo.svg" alt="Alpha Mowing and Landscaping" class="logo"/><!--<![endif]-->
+                            <!--[if IE]><img src="Images/logo.png" alt="Alpha Mowing and Landscaping" class="logo"/><![endif]-->
                         </a>
                     </div>
                 </div>
@@ -50,7 +55,7 @@
         <article class="gel-layout__item gel-1/1">
             <div class="gel-layout--center hero-text">
                 <div class="gel-layout__padding">
-                    <h1>Local. Quality. Experience.</h1>
+                    <h1>Local. <span class="show-mobile"><br /></span>Experience. <span class="show-mobile"><br /></span>Quality.</h1>
                 </div>
             </div>
         </article>
@@ -60,7 +65,7 @@
         <div class="gel-layout">
             <article class="gel-layout__item gel-1/1">
                 <div class="gel-layout__padding">
-                    <p class="intro-copy">Alpha Mowing and Landscaping, LLC is a family owned and operated company servicing Pittsburg, KS and the surrounding areas. We specialize in lawn care and lawn installation as well as basic landscaping, including gardens, pavestone installation (patio and walkway), and flower boxes. If you have any questions or are interested in getting a quote, please <a href="contact">contact us</a>.</p>
+                    <p class="intro-copy">Alpha Mowing and Landscaping, LLC is a family owned and operated company servicing Pittsburg, KS and the surrounding areas. We specialize in lawn care and lawn installation, as well as basic landscaping, including gardens, pavestone installation (patio and walkway), and flower boxes. If you have any questions or are interested in getting a quote, please <a href="contact.html">contact us</a>.</p>
                 </div>
             </article>
         </div>
@@ -74,8 +79,8 @@
                     </div>
                     <div class="gel-layout__item gel-1/2@m gel-1/1">
                         <h2>Our Services</h2>
-                        <p>From Lawn Maintenance to French Drains we offer a vareity of services for commercial and residential needs.</p>
-                        <a class="button">Learn more</a>
+                        <p>From Lawn Maintenance to French Drains, we offer a vareity of services for commercial and residential needs.</p>
+                        <a class="button" href="/services.html">Learn more</a>
                     </div>
                 </div>
             </article>
@@ -89,7 +94,7 @@
                     </div>
                     <div class="gel-layout__item gel-1/2@m gel-1/1">
                         <h2>Call Today!</h2>
-                        <p>For a quote, call us at <a href="tel:9185049995">918-504-9995</a></p>
+                        <p>For a quote, call us at <a href="tel:6203220065">620-322-0065</a></p>
                     </div>
                 </div>
             </article>
@@ -109,7 +114,7 @@
                 </div>
                 <div class="gel-layout__item gel-2/3@l gel-1/1@m copyright">
                     <div class="gel-layout__padding">
-                        <p>&copy; 2017 Alpha Mowing and Landscpaing | <a href="https://www.facebook.com/EngageDesign/" target="_blank">Design - Engage Design</a></p>
+                        <p id="copy-year">&copy; <script>document.write(new Date().getFullYear());</script> Alpha Mowing and Landscaping | <a href="https://www.facebook.com/EngageDesign/" target="_blank">Design - Engage Design</a></p>
                     </div>
                 </div>
             </div>

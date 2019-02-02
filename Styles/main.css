@@ -1806,6 +1806,11 @@ template {
     line-height: 22px;
     line-height: 1.375rem; } }
 
+.chamber-img {
+  padding-top: 32px;
+  width: 50%;
+  max-width: 200px; }
+
 /*Original author Mike Riethmuller:
 // https://madebymike.com.au/writing/fluid-type-calc-examples/
 // https://codepen.io/MadeByMike/pen/vNrvdZ
@@ -1825,10 +1830,10 @@ html {
 h1, .h1 {
   font-weight: normal; }
   h1, .h1 {
-    font-size: 40px; }
+    font-size: 32px; }
     @media screen and (min-width: 399px) {
       h1, .h1 {
-        font-size: calc(1.36209vw + 34.56527px); } }
+        font-size: calc(2.27015vw + 22.94211px); } }
     @media screen and (min-width: 1280px) {
       h1, .h1 {
         font-size: 52px; } }
@@ -1856,13 +1861,12 @@ h3, .h3 {
         font-size: 20px; } }
 
 p {
-  margin-bottom: 16px;
-  /*max-width: $line-length;*/ }
+  margin-bottom: 16px; }
   p {
-    font-size: 12px; }
+    font-size: 16px; }
     @media screen and (min-width: 399px) {
       p {
-        font-size: calc(0.90806vw + 8.37684px); } }
+        font-size: calc(0.45403vw + 14.18842px); } }
     @media screen and (min-width: 1280px) {
       p {
         font-size: 20px; } }
@@ -1972,20 +1976,31 @@ a {
   text-decoration: underline;
   cursor: pointer; }
 
+a:focus {
+  outline: 1px solid;
+  outline-offset: .15em; }
+
 a:hover {
   color: #00cd62; }
 
 .button {
+  text-decoration: none;
   padding: 8px 16px;
   background-color: transparent;
   color: #004D25;
   margin-top: 8px;
   border: 1px solid #004D25; }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: #004D25;
   border: 1px solid #004D25;
-  color: #ffffff; }
+  color: #ffffff;
+  outline: none; }
+
+hr {
+  border: 0;
+  height: 3px;
+  background: #004D25; }
 
 .text--center {
   text-align: center; }
@@ -2048,7 +2063,8 @@ footer a {
   margin-left: 16px; }
 
 .bottom-nav a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #00cd62; }
 
 .justify--center {
   justify-content: center; }
@@ -2059,6 +2075,8 @@ footer a {
 @media (max-width: 899px) {
   .show-mobile {
     display: block; }
+  .hide-mobile {
+    display: none; }
   .nav-top__content {
     text-align: center; }
   .logo__container {
@@ -2067,7 +2085,7 @@ footer a {
     width: 60%; }
   .nav-links {
     text-align: center;
-    padding-right: 16px; }
+    padding: 0px 16px 0px 16px; }
   .nav-links a {
     margin: 0;
     padding: 16px; }
@@ -2086,20 +2104,13 @@ footer a {
     padding: 8px 32px; } }
 
 .hero {
-  background-image: url(http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048);
-  background-position: center;
+  background-image: url(/Images/hero.jpg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 60vh;
   position: relative; }
 
-/*
-
-http://media.istockphoto.com/photos/green-luscious-grass-picture-id516179412?s=2048x2048
-http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048
-http://media.istockphoto.com/photos/fresh-green-backyard-picture-id506180696?s=2048x2048
-
-*/
 .hero-text {
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
@@ -2109,6 +2120,13 @@ http://media.istockphoto.com/photos/fresh-green-backyard-picture-id506180696?s=2
 
 .services-icon {
   max-height: 175px; }
+
+@media (max-width: 899px) {
+  .hero {
+    background-image: url(/Images/hero-mobile.jpg); }
+  .services-icon {
+    padding-top: 32px;
+    max-height: 100px; } }
 
 .form-group {
   padding: 16px 0px;
@@ -2137,8 +2155,6 @@ input:focus, textarea:focus {
 textarea {
   /* To properly align multiline text field with their label */
   vertical-align: top;
-  /* To give enough room to type some text */
-  height: 5em;
   /* To allow users to resize any textarea vertically
      It works only on Chrome, Firefox and Safari */
   resize: vertical; }
@@ -2146,4 +2162,11 @@ textarea {
 .button--contact {
   width: 30%;
   margin: 0 auto; }
+
+.contact-note {
+  font-size: 12px; }
+
+@media (max-width: 599px) {
+  .button--contact {
+    width: 100%; } }
 

@@ -1,5 +1,4 @@
 ﻿$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
 $base-spacing-unit: 16px;
 $base-font-size: 16px;
 $line-length: 75ch;
@@ -53,7 +52,7 @@ html {
 
 
 h1, .h1 {
-    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 2.5), ($base-font-size * 3.25));
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 2), ($base-font-size * 3.25));
 
     font-weight: normal;
 }
@@ -71,10 +70,9 @@ h3, .h3 {
 }
 
 p {
-    @include interpolate(font-size, 399px, 1280px, ($base-font-size * .75), ($base-font-size * 1.25));
+    @include interpolate(font-size, 399px, 1280px, ($base-font-size * 1), ($base-font-size * 1.25));
     @include interpolate(line-height, 399px, 1280px, ($base-font-size * 1.5 ), ($base-font-size * 2));
     margin-bottom: $base-spacing-unit;
-    /*max-width: $line-length;*/
 }
 
 footer {

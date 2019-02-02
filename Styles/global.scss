@@ -3,7 +3,7 @@
 }
 
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -18,26 +18,39 @@ a {
     cursor: pointer;
 }
 
-a:hover{
+a:focus {
+    outline: 1px solid;
+    outline-offset: .15em;
+}
+
+
+a:hover {
     color: $brand-color-light;
 }
 
 .button {
+    text-decoration: none;
     padding: ($base-spacing-unit / 2) $base-spacing-unit;
     background-color: transparent;
     color: $brand-color;
     margin-top: $base-spacing-unit /2;
     border: 1px solid $brand-color;
-
 }
 
-.button:hover {
+.button:hover, .button:focus {
     background-color: $brand-color;
     border: 1px solid $brand-color;
     color: #ffffff;
+    outline: none;
 }
 
-.text--center{
+hr {
+    border: 0;
+    height: 3px;
+    background: $brand-color;
+}
+
+.text--center {
     text-align: center;
 }
 
@@ -98,13 +111,13 @@ footer {
     color: $color-white;
 }
 
-footer a{
+footer a {
     color: #fff;
     text-decoration: none;
 }
 
 .bottom-nav a {
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
     color: #ffffff;
     text-decoration: none;
@@ -112,22 +125,27 @@ footer a{
     margin-left: $base-spacing-unit;
 }
 
-.bottom-nav  a:hover {
+.bottom-nav a:hover {
     text-decoration: underline;
+    color: $brand-color-light;
 }
 
-.justify--center{
+.justify--center {
     justify-content: center;
 }
 
-.show-mobile{
+.show-mobile {
     display: none;
 }
 
 @media (max-width: 899px) {
-    .show-mobile{
-    display: block;
-}
+    .show-mobile {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
 
     .nav-top__content {
         text-align: center;
@@ -143,7 +161,7 @@ footer a{
 
     .nav-links {
         text-align: center;
-        padding-right: 16px;
+        padding: 0px 16px 0px 16px;
     }
 
     .nav-links a {

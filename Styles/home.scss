@@ -1,19 +1,11 @@
 ﻿.hero {
-    background-image: url(http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048);
-    background-position: center;
+    background-image: url(/Images/hero.jpg);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
     position: relative;
 }
-
-/*
-
-http://media.istockphoto.com/photos/green-luscious-grass-picture-id516179412?s=2048x2048
-http://media.istockphoto.com/photos/park-landscape-picture-id474467063?s=2048x2048
-http://media.istockphoto.com/photos/fresh-green-backyard-picture-id506180696?s=2048x2048
-
-*/
 
 .hero-text {
     background-color: rgba(255, 255, 255, 0.7);
@@ -23,6 +15,18 @@ http://media.istockphoto.com/photos/fresh-green-backyard-picture-id506180696?s=2
     border-bottom: 2px solid #fff;
 }
 
-.services-icon{
+.services-icon {
     max-height: 175px;
+}
+
+
+@media (max-width: 899px) {
+    .hero {
+    background-image: url(/Images/hero-mobile.jpg);
+}
+
+    .services-icon {
+        padding-top: $base-spacing-unit * 2;
+        max-height: 100px;
+    }
 }
