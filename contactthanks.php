@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,13 @@
 
     <link rel="icon" type="image/png" href="/Images/favicon.png">
 
-    <title>Contact Alpha Mowing and Landscpaing</title>
+    <title>Thank You! - Alpha Mowing and Landscaping</title>
+    
+    <style>
+        .short{
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,8 +38,8 @@
                 <div class="gel-layout__item gel-1/3@l gel-1/1@m">
                     <div class="gel-layout__padding logo__container">
                         <a href="index.html">
-                            <!--[if !IE]><!--><img src="Images/logo.svg" alt="Alpha Mowing and Landscaping" class="logo" /><!--<![endif]-->
-                            <!--[if IE]><img src="Images/logo.png" alt="Alpha Mowing and Landscaping" class="logo"/><![endif]-->
+                            <!--[if !IE]><!--><img src="Images/logo.svg" alt="Alpha Mowing and Landspacing" class="logo" /><!--<![endif]-->
+                            <!--[if IE]><img src="Images/logo.png" alt="Alpha Mowing and Landspacing" class="logo"/><![endif]-->
                         </a>
                     </div>
                 </div>
@@ -50,38 +56,10 @@
     </header>
     <main class="gel-wrap maincontent">
         <section class="gel-layout justify--center">
-            <article class="gel-layout__item gel-2/3">
-                <h1>Contact Us</h1>
-                <form method="post" action="contactengine.php" autocomplete="on">
-                    <div class="form-group">
-                        <label for="Name">
-                            Name:* <br />
-                            <input type="text" name="Name" required/>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="Phone">
-                            Phone:* <br />
-                            <input type="text" name="Phone" required/>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">
-                            Email:*  <br />
-                            <input type="text" name="Email" required/>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="Message">
-                            Message:*
-                            <textarea id="Message" name="Message" cols="40" rows="10" required></textarea>
-                        </label>
-                    </div>
-                    <div class="form-group text--center">
-                        <input class="button button--contact" type="submit" name="submit" value="Submit" />
-                    </div>
-                    <p class="contact-note">* Indicates Required Field</p>
-                </form>
+            <article class="gel-layout__item gel-2/3 short">
+                <h1>Thank You!</h1>
+                <p>We will contact you in 2 - 3 business days.</p>
+                <a href="index.html">Home</a>
             </article>
         </section>
     </main>
@@ -99,7 +77,7 @@
                 </div>
                 <div class="gel-layout__item gel-2/3@l gel-1/1@m copyright">
                     <div class="gel-layout__padding">
-                        <p id="copy-year">&copy; <script>document.write(new Date().getFullYear());</script> Alpha Mowing and Landscaping | <a href="https://www.facebook.com/EngageDesign/" target="_blank">Design - Engage Design</a></p>
+                        <p>&copy; 2017 Alpha Mowing and Landscpaing | <a href="https://www.facebook.com/EngageDesign/" target="_blank">Design - Engage Design</a></p>
                     </div>
                 </div>
             </div>
