@@ -52,35 +52,41 @@
         <section class="gel-layout justify--center">
             <article class="gel-layout__item gel-2/3">
                 <h1>Contact Us</h1>
-                <form method="post" action="/contactengine.php" autocomplete="on">
-                    <div class="form-group">
-                        <label for="Name">
-                            Name:* <br />
-                            <input type="text" name="Name" required/>
+                <form class="gel-layout" method="post" action="/contactengine.php" autocomplete="on">
+                    <div class="gel-layout__item gel-1/2 form-group">
+                        <label for="first_name">
+                            First Name:* <br />
+                            <input type="text" name="first_name" required/>
                         </label>
                     </div>
-                    <div class="form-group">
-                        <label for="Phone">
+                    <div class="gel-layout__item gel-1/2 form-group">
+                        <label for="last_name">
+                            Last Name:* <br />
+                            <input type="text" name="last_name" required />
+                        </label>
+                    </div>
+                    <div class="gel-layout__item gel-1/1 form-group">
+                        <label for="telephone">
                             Phone:* <br />
-                            <input type="text" name="Phone" required/>
+                            <input type="text" name="telephone" required/>
                         </label>
                     </div>
-                    <div class="form-group">
+                    <div class="gel-layout__item gel-1/1 form-group">
                         <label for="Email">
                             Email:*  <br />
                             <input type="text" name="Email" required/>
                         </label>
                     </div>
-                    <div class="form-group">
-                        <label for="Message">
+                    <div class="gel-layout__item gel-1/1 form-group">
+                        <label for="comments">
                             Message:*
-                            <textarea id="Message" name="Message" cols="40" rows="10" required></textarea>
+                            <textarea id="Message" name="comments" cols="40" rows="10" required></textarea>
                         </label>
                     </div>
-                    <div class="form-group text--center">
+                    <div class="gel-layout__item gel-1/1 form-group text--center">
                         <input class="button button--contact" type="submit" name="submit" value="Submit" />
+                        <p class="contact-note">* Indicates Required Field</p>
                     </div>
-                    <p class="contact-note">* Indicates Required Field</p>
                 </form>
             </article>
         </section>
